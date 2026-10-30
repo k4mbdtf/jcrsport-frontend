@@ -11,12 +11,13 @@ import { mount, click, type, submit, botonConTexto } from '../tests/helpers'
 
 const producto = {
   id: 1,
-  name: 'Zapatillas Running Pro',
-  category: 'Calzado',
-  price: 39990,
+  name: 'Camiseta Colo Colo Entrenamiento 2026',
+  category: 'Ropa',
+  price: 64990,
   offerPrice: null,
-  stock: 5,
-  image: 'img/zapatillas.jpeg',
+  stock: 10,
+  image: 'img/camisetacolocolo.jpg',
+  description: 'Camiseta de entrenamiento de Colo Colo, temporada 2026.',
 }
 
 let view
@@ -32,9 +33,9 @@ describe('ProductCard', () => {
 
   it('renderiza nombre, categoria y precio formateado', () => {
     view = montar(producto)
-    expect(view.container.textContent).toContain('Zapatillas Running Pro')
-    expect(view.container.textContent).toContain('Calzado')
-    expect(view.container.textContent).toContain('$39.990')
+    expect(view.container.textContent).toContain('Camiseta Colo Colo Entrenamiento 2026')
+    expect(view.container.textContent).toContain('Ropa')
+    expect(view.container.textContent).toContain('$64.990')
   })
 
   it('muestra la etiqueta Oferta solo si el producto tiene precio de oferta', () => {

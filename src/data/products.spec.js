@@ -17,7 +17,7 @@ describe('data/products (CRUD)', () => {
   })
 
   it('READ: busca un producto por id (numero o texto)', () => {
-    expect(getProductById(1).name).toBe('Zapatillas Running Pro')
+    expect(getProductById(1).name).toBe('Camiseta Colo Colo Entrenamiento 2026')
     expect(getProductById('2').id).toBe(2)
     expect(getProductById(999)).toBeUndefined()
   })
@@ -34,7 +34,7 @@ describe('data/products (CRUD)', () => {
     const actualizado = updateProduct(1, { price: 35000, stock: 3 })
     expect(actualizado.price).toBe(35000)
     expect(getProductById(1).stock).toBe(3)
-    expect(getProductById(1).name).toBe('Zapatillas Running Pro')
+    expect(getProductById(1).name).toBe('Camiseta Colo Colo Entrenamiento 2026')
   })
 
   it('UPDATE: devuelve null si el producto no existe', () => {

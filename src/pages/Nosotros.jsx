@@ -3,10 +3,9 @@ export default function Nosotros() {
     <>
       <h1 className="h3">¿Quiénes somos?</h1>
       <p>
-        JCRSport es una tienda dedicada a la venta de artículos deportivos: calzado, ropa,
-        balones y accesorios para entrenar.
+        JCRSport es una tienda dedicada a la venta de ropa y artículos enfocados al deporte.
       </p>
-      <p>Estamos en Santiago, Chile.</p>
+      <p>Estamos en Padre Hurtado, Chile.</p>
     </>
   )
 }

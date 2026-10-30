@@ -17,7 +17,7 @@ export default function Contacto() {
       <Col md={5}>
         <h2 className="h5 mt-4 mt-md-0">Síguenos en nuestras redes</h2>
         <ul>
-          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="https://www.instagram.com/k4mbdtf">Instagram</a></li>
           <li><a href="https://www.facebook.com/">Facebook</a></li>
         </ul>
       </Col>

@@ -52,7 +52,7 @@ export default function CheckoutForm({ total, onPay }) {
         <Form.Control as="textarea" rows={2} name="indicaciones" value={values.indicaciones} onChange={handleChange} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="checkout-resultadoPago">
-        <Form.Label>Resultado del pago (simulado)</Form.Label>
+        <Form.Label>Resultado del pago </Form.Label>
         <Form.Select name="resultadoPago" value={values.resultadoPago} onChange={handleChange}>
           <option value="ok">Pago correcto</option>
           <option value="error">Pago con error</option>
